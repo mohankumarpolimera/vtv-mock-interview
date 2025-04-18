@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mock Interview Assistant</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="header">
+    <h1>Mock Interview Assistant</h1>
+    <h2 id="roundLabel">Round: Communication</h2>
+    <h3 id="timerDisplay">🕒 Time Left: 02:00</h3>
+  </div>
+
+  <div class="main-container">
+    <div class="column">
+      <img src="/static/icons/ai.png" id="aiIcon" class="icon" />
+    </div>
+    <div class="column">
+      <img src="/static/icons/user.png" id="userIcon" class="icon" />
+    </div>
+  </div>
+
+  <div id="status">Click Start to begin...</div>
+
+  <div class="controls">
+    <button id="startInterviewBtn" onclick="unlockAudioThenStart()">▶️ Start Interview</button>
+    <button id="nextRoundBtn" style="display: none;" onclick="startNextRound()">⏭️ Next Round</button>
+    <button id="restartInterviewBtn" style="display: none;" onclick="restartInterview()">🔁 Restart Interview</button>
+  </div>
+
+  <div id="evaluation">
+    <h3>📊 Final Evaluation</h3>
+    <pre id="summaryText"></pre>
+  </div>
+  <script src="/static/script.js"></script>
+</body>
+</html>

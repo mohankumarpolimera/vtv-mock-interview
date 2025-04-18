@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+openai
+edge-tts
+pygame
+sounddevice
+pydub
+scipy
+numpy
